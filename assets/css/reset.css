@@ -27,7 +27,7 @@
     font-family: inherit;
   }
   
-  /* Removes default bullet points from lists - remove if not adding list */
+  /* Removes default bullet points from lists */
   ol, ul {
     list-style: none;
   }
