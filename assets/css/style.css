@@ -61,7 +61,25 @@ nav li:last-child {
   border-right: none;
 }
 
+/* Hero image styles */
+.hero {
+  position: relative;
+}
 
+h2 {
+  position: absolute;
+  color: white;
+  font-size: 150%;
+  font-weight: 300;
+  right: 10px;
+  bottom: 25px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h2 span {
+  background-color: rgba(29, 29, 29, 0.589);
+  padding: 10px;
+}
 
 /* Style About section */
 .about-container {
@@ -75,6 +93,7 @@ nav li:last-child {
 .about-info {
   flex: 3;
   font-size: 150%;
+  font-family:'Courier New', Courier, monospace
 }
 
 /* Style Work section */
@@ -91,20 +110,17 @@ nav li:last-child {
 }
 
 /* Style Contact section */
+.contact-container {
+  display: flex;
+  align-items: center;
+}
 
 #contact {
   flex: 1;
 }
 
-.contact-container {
-  display: flex;
-  align-items: center;
-  padding: 25px 5%;
-}
-
 .contact-links {
   display: inline-block;
-  padding: 0 20px;
   justify-content: space-around;
   flex: 3;
 }
