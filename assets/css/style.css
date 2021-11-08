@@ -1,0 +1,39 @@
+h1, h3, h5, .nav-links {
+  font-family: 'Montserrat', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Navigation Bar styling */
+
+header {
+  display: flex;
+  width: 100%;
+  background-color: rgb(29, 29, 29);
+}
+
+h1 {
+  justify-content: flex-start;
+  color: white;
+}
+
+nav a {
+  color: white;
+}
+
+nav {
+  justify-content: flex-end;
+}
+
+header nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  font-size: 150%;
+}
+
+/* Add a white right border between nave items */
+nav li {
+  border-right: 1px solid white;
+}
+
+nav li:last-child {
+  border-right: none;
+}
