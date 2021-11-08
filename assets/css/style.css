@@ -3,7 +3,6 @@ h1, h3, h5, .nav-links {
 }
 
 /* Navigation Bar styling */
-
 header {
   display: flex;
   justify-content: space-between;
@@ -47,11 +46,58 @@ header nav {
   font-size: 150%;
 }
 
-/* Add a white right border between nav items */
+/* Add border between nav items */
 nav li {
   border-right: 1px solid white;
 }
 
 nav li:last-child {
   border-right: none;
+}
+
+/* Style About section */
+.about-container {
+  display: flex;
+}
+
+#about {
+  flex: 1;
+}
+
+.about-info {
+  flex: 3;
+  font-size: 150%;
+}
+
+/* Style Work section */
+.work-container {
+  display: flex;
+}
+
+#work {
+  flex: 1;
+}
+
+.work-links {
+  flex: 3
+}
+
+/* Style Contact section */
+
+.contact-container {
+  display: flex;
+}
+
+#contact {
+  flex: 1;
+}
+
+.contact-links {
+  flex: 3
+}
+
+/* Style main titles */
+.titles {
+  font-size: 300%;
+  color: white;
 }
