@@ -2,6 +2,12 @@ h1, h3, h5, .nav-links {
   font-family: 'Montserrat', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+main {
+  background-color: white;
+  /* width: 100%;  how to change background color? */
+  /* height: 100%; */
+}
+
 /* Navigation Bar styling */
 header {
   display: flex;
@@ -55,6 +61,8 @@ nav li:last-child {
   border-right: none;
 }
 
+
+
 /* Style About section */
 .about-container {
   display: flex;
@@ -84,20 +92,41 @@ nav li:last-child {
 
 /* Style Contact section */
 
-.contact-container {
-  display: flex;
-}
-
 #contact {
   flex: 1;
 }
 
+.contact-container {
+  display: flex;
+  align-items: center;
+  padding: 25px 5%;
+}
+
 .contact-links {
-  flex: 3
+  display: inline-block;
+  padding: 0 20px;
+  justify-content: space-around;
+  flex: 3;
+}
+
+.contact-links li a {
+  transition: all 0.3s ease 0s;
+  color: purple;
+}
+
+.contact-links li a:hover {
+  font-size: 110%;
+  text-shadow: 0 0 5px purple;
+  text-shadow: 0 0 8px white;
+  text-shadow: 0 0 10px white;
+  text-shadow: 0 0 15px white;
+  text-shadow: 0 0 20px white;
+  text-shadow: 0 0 25px white;
+  text-shadow: 0 0 30x purple
 }
 
 /* Style main titles */
 .titles {
   font-size: 300%;
-  color: white;
 }
+
