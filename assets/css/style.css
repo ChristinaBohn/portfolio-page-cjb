@@ -4,8 +4,6 @@ h1, h3, h5, .nav-links {
 
 main {
   background-color: white;
-  /* width: 100%;  how to change background color? */
-  /* height: 100%; */
 }
 
 /* Navigation Bar styling */
@@ -26,6 +24,7 @@ header {
   transition: all 0.3s ease 0s;
 }
 
+/* makes links glow on hover */
 .nav-links li a:hover {
   font-size: 110%;
   text-shadow: 0 0 5px white;
@@ -69,60 +68,63 @@ nav li:last-child {
 h2 {
   position: absolute;
   color: white;
-  font-size: 150%;
+  font-size: 200%;
   font-weight: 300;
-  right: 10px;
-  bottom: 25px;
+  right: 10%;
+  bottom: 10%;
   font-family: 'Courier New', Courier, monospace;
+  background-color: rgba(29, 29, 29, 0.85);
+  padding: 10px;
+  width: 40%;
+  line-height: 2;
 }
 
-h2 span {
-  background-color: rgba(29, 29, 29, 0.589);
-  padding: 10px;
+/* Main section flexbox */
+section {
+  display: flex;
+}
+
+.titles {
+  flex: 1;
+}
+
+.rightside {
+  flex: 3;
 }
 
 /* Style About section */
-.about-container {
-  display: flex;
-}
-
-#about {
-  flex: 1;
-}
-
 .about-info {
-  flex: 3;
   font-size: 150%;
-  font-family:'Courier New', Courier, monospace
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+  line-height: 1.5;
 }
 
 /* Style Work section */
-.work-container {
-  display: flex;
-}
-
-#work {
-  flex: 1;
-}
-
 .work-links {
-  flex: 3
+  display: flex;
+  flex-wrap: wrap;
 }
+
+article {
+  position: relative;
+}
+
+h4 {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  font-size: 2rem;
+}
+
 
 /* Style Contact section */
-.contact-container {
-  display: flex;
-  align-items: center;
-}
-
-#contact {
-  flex: 1;
-}
-
 .contact-links {
   display: inline-block;
   justify-content: space-around;
-  flex: 3;
 }
 
 .contact-links li a {
@@ -144,5 +146,16 @@ h2 span {
 /* Style main titles */
 .titles {
   font-size: 300%;
+}
+
+/* Footer styles */
+footer {
+  background-color: rgba(29, 29, 29);
+}
+
+h5 {
+  color: white;
+  text-align: center;
+  padding: 2rem;
 }
 
