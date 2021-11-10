@@ -38,7 +38,7 @@ header {
 
 h1 {
   color: white;
-  font-size: 400%;
+  font-size: 430%;
 }
 
 nav a {
@@ -70,8 +70,8 @@ h2 {
   color: white;
   font-size: 200%;
   font-weight: 300;
-  right: 10%;
-  bottom: 10%;
+  left: 10%;
+  top: 20%;
   font-family: 'Courier New', Courier, monospace;
   background-color: rgba(29, 29, 29, 0.85);
   padding: 10px;
@@ -86,6 +86,8 @@ section {
 
 .titles {
   flex: 1;
+  border-right: 2px solid black;
+  font-size: 400%;
 }
 
 .rightside {
@@ -93,18 +95,27 @@ section {
 }
 
 /* Style About section */
+h3 {
+  padding: 20px;
+}
+
 .about-info {
-  font-size: 150%;
+  font-size: 160%;
   font-family: 'Courier New', Courier, monospace;
-  margin: 0 auto;
-  padding: 2.5rem 1rem;
+  font-weight: 400;
+  padding: 2.5rem;
   line-height: 1.5;
+}
+
+.about-info p {
+  margin: 20px auto;
 }
 
 /* Style Work section */
 .work-links {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 article {
@@ -124,28 +135,26 @@ h4 {
 /* Style Contact section */
 .contact-links {
   display: inline-block;
-  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .contact-links li a {
   transition: all 0.3s ease 0s;
-  color: purple;
+  color: black;
+  font-size: 160%;
 }
 
 .contact-links li a:hover {
-  font-size: 110%;
-  text-shadow: 0 0 5px purple;
-  text-shadow: 0 0 8px white;
-  text-shadow: 0 0 10px white;
-  text-shadow: 0 0 15px white;
-  text-shadow: 0 0 20px white;
-  text-shadow: 0 0 25px white;
-  text-shadow: 0 0 30x purple
-}
-
-/* Style main titles */
-.titles {
-  font-size: 300%;
+  font-size: 170%;
+  text-shadow: 0 0 5px black;
+  text-shadow: 0 0 8px black;
+  text-shadow: 0 0 10px black;
+  text-shadow: 0 0 15px black;
+  text-shadow: 0 0 20px black;
+  text-shadow: 0 0 25px black;
+  text-shadow: 0 0 30x black;
 }
 
 /* Footer styles */
