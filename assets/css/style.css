@@ -25,7 +25,7 @@ nav a {
   color: white;
 }
 
-/* makes links glow on hover */
+/* Makes links glow on hover */
 .nav-links li a:hover {
   font-size: 110%;
   text-shadow: 0 0 5px white;
@@ -78,38 +78,40 @@ h2 {
 }
 
 /* Main section flexbox */
-section {
+main section {
   display: flex;
 }
 
 .titles {
   max-width: 400px;
-  flex: 1;
+  width: 25%;
+  height: 100%;
   border-right: 2px solid black;
-  font-size: 400%;
+  font-size: 380%;
   text-align: end;
+  margin-right: auto;
 }
 
 .rightside {
-  flex: 3;
+  width: 75%;
 }
 
 /* Style About section */
-h3 {
-  padding: 20px;
+.titles h3 {
+  padding: 20px 20px 0 0;
 }
 
-.about-info {
-  font-size: 180%;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: 400;
-  padding: 3rem;
-  line-height: 1.5;
+.about-container {
+  height: 650px;
 }
 
 .about-info p {
-  margin: 30px auto;
   font-weight: bold;
+  width: 80%;
+  margin: 5%;
+  font-size: 1.8rem;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.5;
 }
 
 /* Style Work section */
@@ -119,28 +121,22 @@ h3 {
   justify-content: space-around;
 }
 
-article {
-  position: relative;
-}
-
-.work-1 {
-  margin: 0 20% ;
+.work-1 img {
   width: 100%;
-  flex: 1 1 200px;
+  flex-shrink: 1;
+  margin-top: 60px;
 }
 
-.work-tiny {
-  width: 25%;
+.work-tiny img {
+  flex-shrink: 1;
 }
 
 article img {
   border-radius: 25px;
-  padding: 5px;
-  margin-top: 40px;
 }
 
 h4 {
-  position: absolute;
+  position: relative;
   bottom: 10%;
   left: 10%;
   font-family: 'Courier New', Courier, monospace;
@@ -148,14 +144,21 @@ h4 {
   font-size: 2rem;
 }
 
+.sticky-title {
+  position: sticky;
+  top: 20px;
+}
 
 /* Style Contact section */
+.contact-container {
+  height: 200px;
+}
 .contact-links {
-  display: inline-block;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 60px;
+  align-content: space-around;
+  height: 100%;
 }
 
 .contact-links li a {
@@ -166,19 +169,20 @@ h4 {
 
 .contact-links li a:hover {
   font-size: 170%;
-  text-shadow: 0 0 5px black;
-  text-shadow: 0 0 8px black;
-  text-shadow: 0 0 10px black;
-  text-shadow: 0 0 15px black;
-  text-shadow: 0 0 20px black;
-  text-shadow: 0 0 25px black;
-  text-shadow: 0 0 30x black;
+  text-shadow: 0 0 5px darkgreen;
+  text-shadow: 0 0 8px darkgreen;
+  text-shadow: 0 0 10px darkgreen;
+  text-shadow: 0 0 15px darkgreen;
+  text-shadow: 0 0 20px darkgreen;
+  text-shadow: 0 0 25px darkgreen;
+  text-shadow: 0 0 30x darkgreen;
 }
 
 /* Footer styles */
 footer {
   background-color: rgba(29, 29, 29);
-  /* width: 100%; ?Why doesn't this work? */
+  background-size: cover;
+  width: 100%;
 }
 
 h5 {
@@ -190,7 +194,14 @@ h5 {
 
 /* MEDIA QUERIES */
 
+/* Desktop */
 @media screen and (max-width: 1200px) {
+
+  .hero img {
+    min-height: 430px;
+    object-fit: cover;
+    overflow: hidden;
+  }
 
   .nav-links {
     display: flex;
@@ -207,9 +218,87 @@ h5 {
   .hero h2 {
     width: fit-content;
     max-width: 70%;
+    font-size: 180%;
+    line-height: 1.5;
   }
 
   .titles h3 {
-    font-size: 80%;
+    font-size: 75%;
+    padding: 15px 15px 0 0;
   }
+
+  .about-info p {
+    font-size: 1.6rem;
+  }
+
+  .work-1 img {
+    min-height: 430px;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  .work-tiny {
+    width: 50%;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 830px) {
+  
+  .nav-links {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .nav-links li {
+    border-right: 1px solid white;
+  }
+  
+  nav li:last-child {
+    border-right: none;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  .hero h2 {
+    font-size: 160%;
+  }
+
+  .about-info p {
+    font-size: 1.4rem;
+  }
+
+  .titles h3 {
+    font-size: 60%;
+    padding: 10px 10px 0 0;
+  }
+
+  .work-tiny {
+    width: 100%;
+  }
+}
+
+/* Smartphone */
+@media screen and (max-width: 560px) {
+
+  header h1 {
+    font-size: 400%;
+  }
+
+  .about-info p {
+    font-size: 1.2rem;
+  }
+
+  .titles h3 {
+    font-size: 40%;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
 }
